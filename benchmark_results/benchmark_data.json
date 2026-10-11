@@ -1,0 +1,205 @@
+{
+  "granularity_scaling": [
+    {
+      "slot_minutes": 60,
+      "num_slots": 17,
+      "num_nodes": 36,
+      "num_edges": 252,
+      "passengers_served": 8635,
+      "py_time_ms": 4.58,
+      "c_seq_time_ms": 0.0,
+      "c_par_time_ms": 165.0
+    },
+    {
+      "slot_minutes": 45,
+      "num_slots": 23,
+      "num_nodes": 48,
+      "num_edges": 286,
+      "passengers_served": 8914,
+      "py_time_ms": 5.65,
+      "c_seq_time_ms": 1.0,
+      "c_par_time_ms": 203.0
+    },
+    {
+      "slot_minutes": 30,
+      "num_slots": 34,
+      "num_nodes": 70,
+      "num_edges": 341,
+      "passengers_served": 8865,
+      "py_time_ms": 5.7,
+      "c_seq_time_ms": 0.0,
+      "c_par_time_ms": 239.0
+    },
+    {
+      "slot_minutes": 20,
+      "num_slots": 51,
+      "num_nodes": 104,
+      "num_edges": 410,
+      "passengers_served": 9004,
+      "py_time_ms": 9.89,
+      "c_seq_time_ms": 2.0,
+      "c_par_time_ms": 456.0
+    },
+    {
+      "slot_minutes": 15,
+      "num_slots": 67,
+      "num_nodes": 136,
+      "num_edges": 490,
+      "passengers_served": 9013,
+      "py_time_ms": 8.45,
+      "c_seq_time_ms": 0.0,
+      "c_par_time_ms": 405.0
+    },
+    {
+      "slot_minutes": 10,
+      "num_slots": 100,
+      "num_nodes": 202,
+      "num_edges": 668,
+      "passengers_served": 8969,
+      "py_time_ms": 14.76,
+      "c_seq_time_ms": 1.0,
+      "c_par_time_ms": 496.0
+    }
+  ],
+  "fleet_scaling": [
+    {
+      "fleet_size": 10,
+      "mcmf_pax": 4648,
+      "baseline_pax": 4010,
+      "gain_pct": 15.91,
+      "mcmf_satisfaction_pct": 46.74,
+      "base_satisfaction_pct": 40.32,
+      "py_time_ms": 2.39
+    },
+    {
+      "fleet_size": 20,
+      "mcmf_pax": 6465,
+      "baseline_pax": 6212,
+      "gain_pct": 4.07,
+      "mcmf_satisfaction_pct": 65.01,
+      "base_satisfaction_pct": 62.46,
+      "py_time_ms": 3.94
+    },
+    {
+      "fleet_size": 30,
+      "mcmf_pax": 7665,
+      "baseline_pax": 7164,
+      "gain_pct": 6.99,
+      "mcmf_satisfaction_pct": 77.07,
+      "base_satisfaction_pct": 72.04,
+      "py_time_ms": 3.76
+    },
+    {
+      "fleet_size": 40,
+      "mcmf_pax": 8865,
+      "baseline_pax": 7970,
+      "gain_pct": 11.23,
+      "mcmf_satisfaction_pct": 89.14,
+      "base_satisfaction_pct": 80.14,
+      "py_time_ms": 4.61
+    },
+    {
+      "fleet_size": 50,
+      "mcmf_pax": 9803,
+      "baseline_pax": 8630,
+      "gain_pct": 13.59,
+      "mcmf_satisfaction_pct": 98.57,
+      "base_satisfaction_pct": 86.78,
+      "py_time_ms": 5.72
+    },
+    {
+      "fleet_size": 60,
+      "mcmf_pax": 9945,
+      "baseline_pax": 9177,
+      "gain_pct": 8.37,
+      "mcmf_satisfaction_pct": 100.0,
+      "base_satisfaction_pct": 92.28,
+      "py_time_ms": 7.12
+    },
+    {
+      "fleet_size": 75,
+      "mcmf_pax": 9945,
+      "baseline_pax": 9851,
+      "gain_pct": 0.95,
+      "mcmf_satisfaction_pct": 100.0,
+      "base_satisfaction_pct": 99.05,
+      "py_time_ms": 8.47
+    },
+    {
+      "fleet_size": 90,
+      "mcmf_pax": 9945,
+      "baseline_pax": 9945,
+      "gain_pct": 0.0,
+      "mcmf_satisfaction_pct": 100.0,
+      "base_satisfaction_pct": 100.0,
+      "py_time_ms": 7.57
+    },
+    {
+      "fleet_size": 110,
+      "mcmf_pax": 9945,
+      "baseline_pax": 9945,
+      "gain_pct": 0.0,
+      "mcmf_satisfaction_pct": 100.0,
+      "base_satisfaction_pct": 100.0,
+      "py_time_ms": 8.01
+    }
+  ],
+  "openmp_speedup": {
+    "seq_time_ms": 2.0,
+    "thread_results": [
+      {
+        "threads": 1,
+        "time_ms": 130.0,
+        "speedup": 0.02
+      },
+      {
+        "threads": 2,
+        "time_ms": 502.0,
+        "speedup": 0.0
+      },
+      {
+        "threads": 4,
+        "time_ms": 834.0,
+        "speedup": 0.0
+      }
+    ]
+  },
+  "multi_route_scaling": [
+    {
+      "num_routes": 1,
+      "fleet": 40,
+      "total_demand": 9945,
+      "passengers_served": 8865,
+      "num_nodes": 70,
+      "num_edges": 341,
+      "time_ms": 7.09
+    },
+    {
+      "num_routes": 2,
+      "fleet": 80,
+      "total_demand": 19897,
+      "passengers_served": 17757,
+      "num_nodes": 70,
+      "num_edges": 501,
+      "time_ms": 20.13
+    },
+    {
+      "num_routes": 3,
+      "fleet": 120,
+      "total_demand": 29845,
+      "passengers_served": 26653,
+      "num_nodes": 70,
+      "num_edges": 672,
+      "time_ms": 30.01
+    },
+    {
+      "num_routes": 4,
+      "fleet": 160,
+      "total_demand": 39796,
+      "passengers_served": 35546,
+      "num_nodes": 70,
+      "num_edges": 834,
+      "time_ms": 47.61
+    }
+  ]
+}

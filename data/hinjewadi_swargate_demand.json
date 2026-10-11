@@ -1,0 +1,287 @@
+{
+  "corridor": "Hinjewadi <-> Swargate (PMPML)",
+  "slot_minutes": 30,
+  "layover_minutes": 10.0,
+  "bus_capacity": 60,
+  "num_slots": 34,
+  "slots": [
+    {
+      "index": 0,
+      "hour": 6.0,
+      "time_str": "06:00",
+      "travel_time_min": 75.2
+    },
+    {
+      "index": 1,
+      "hour": 6.5,
+      "time_str": "06:30",
+      "travel_time_min": 75.9
+    },
+    {
+      "index": 2,
+      "hour": 7.0,
+      "time_str": "07:00",
+      "travel_time_min": 78.3
+    },
+    {
+      "index": 3,
+      "hour": 7.5,
+      "time_str": "07:30",
+      "travel_time_min": 83.9
+    },
+    {
+      "index": 4,
+      "hour": 8.0,
+      "time_str": "08:00",
+      "travel_time_min": 93.9
+    },
+    {
+      "index": 5,
+      "hour": 8.5,
+      "time_str": "08:30",
+      "travel_time_min": 106.1
+    },
+    {
+      "index": 6,
+      "hour": 9.0,
+      "time_str": "09:00",
+      "travel_time_min": 115.0
+    },
+    {
+      "index": 7,
+      "hour": 9.5,
+      "time_str": "09:30",
+      "travel_time_min": 115.0
+    },
+    {
+      "index": 8,
+      "hour": 10.0,
+      "time_str": "10:00",
+      "travel_time_min": 106.1
+    },
+    {
+      "index": 9,
+      "hour": 10.5,
+      "time_str": "10:30",
+      "travel_time_min": 93.9
+    },
+    {
+      "index": 10,
+      "hour": 11.0,
+      "time_str": "11:00",
+      "travel_time_min": 83.9
+    },
+    {
+      "index": 11,
+      "hour": 11.5,
+      "time_str": "11:30",
+      "travel_time_min": 78.3
+    },
+    {
+      "index": 12,
+      "hour": 12.0,
+      "time_str": "12:00",
+      "travel_time_min": 75.9
+    },
+    {
+      "index": 13,
+      "hour": 12.5,
+      "time_str": "12:30",
+      "travel_time_min": 75.2
+    },
+    {
+      "index": 14,
+      "hour": 13.0,
+      "time_str": "13:00",
+      "travel_time_min": 75.0
+    },
+    {
+      "index": 15,
+      "hour": 13.5,
+      "time_str": "13:30",
+      "travel_time_min": 75.0
+    },
+    {
+      "index": 16,
+      "hour": 14.0,
+      "time_str": "14:00",
+      "travel_time_min": 75.0
+    },
+    {
+      "index": 17,
+      "hour": 14.5,
+      "time_str": "14:30",
+      "travel_time_min": 75.1
+    },
+    {
+      "index": 18,
+      "hour": 15.0,
+      "time_str": "15:00",
+      "travel_time_min": 75.3
+    },
+    {
+      "index": 19,
+      "hour": 15.5,
+      "time_str": "15:30",
+      "travel_time_min": 76.1
+    },
+    {
+      "index": 20,
+      "hour": 16.0,
+      "time_str": "16:00",
+      "travel_time_min": 78.3
+    },
+    {
+      "index": 21,
+      "hour": 16.5,
+      "time_str": "16:30",
+      "travel_time_min": 82.8
+    },
+    {
+      "index": 22,
+      "hour": 17.0,
+      "time_str": "17:00",
+      "travel_time_min": 90.5
+    },
+    {
+      "index": 23,
+      "hour": 17.5,
+      "time_str": "17:30",
+      "travel_time_min": 101.2
+    },
+    {
+      "index": 24,
+      "hour": 18.0,
+      "time_str": "18:00",
+      "travel_time_min": 112.0
+    },
+    {
+      "index": 25,
+      "hour": 18.5,
+      "time_str": "18:30",
+      "travel_time_min": 119.0
+    },
+    {
+      "index": 26,
+      "hour": 19.0,
+      "time_str": "19:00",
+      "travel_time_min": 119.0
+    },
+    {
+      "index": 27,
+      "hour": 19.5,
+      "time_str": "19:30",
+      "travel_time_min": 112.0
+    },
+    {
+      "index": 28,
+      "hour": 20.0,
+      "time_str": "20:00",
+      "travel_time_min": 101.2
+    },
+    {
+      "index": 29,
+      "hour": 20.5,
+      "time_str": "20:30",
+      "travel_time_min": 90.5
+    },
+    {
+      "index": 30,
+      "hour": 21.0,
+      "time_str": "21:00",
+      "travel_time_min": 82.8
+    },
+    {
+      "index": 31,
+      "hour": 21.5,
+      "time_str": "21:30",
+      "travel_time_min": 78.3
+    },
+    {
+      "index": 32,
+      "hour": 22.0,
+      "time_str": "22:00",
+      "travel_time_min": 76.1
+    },
+    {
+      "index": 33,
+      "hour": 22.5,
+      "time_str": "22:30",
+      "travel_time_min": 75.3
+    }
+  ],
+  "demand": {
+    "S->H": [
+      56,
+      79,
+      131,
+      223,
+      343,
+      451,
+      495,
+      452,
+      345,
+      228,
+      141,
+      95,
+      80,
+      80,
+      84,
+      85,
+      84,
+      79,
+      75,
+      72,
+      75,
+      83,
+      96,
+      110,
+      121,
+      125,
+      121,
+      109,
+      94,
+      78,
+      65,
+      56,
+      50,
+      47
+    ],
+    "H->S": [
+      48,
+      57,
+      72,
+      89,
+      104,
+      110,
+      105,
+      91,
+      75,
+      64,
+      60,
+      64,
+      71,
+      80,
+      87,
+      90,
+      87,
+      81,
+      74,
+      73,
+      87,
+      130,
+      209,
+      320,
+      435,
+      510,
+      510,
+      435,
+      319,
+      206,
+      123,
+      75,
+      52,
+      44
+    ]
+  }
+}
