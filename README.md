@@ -82,7 +82,25 @@ python main.py run --fleet 50 --slot 30
 ```bash
 python main.py compare --fleet 50 --slot 30
 ```
+
+### Serial (C) vs Parallel (OpenMP) Interactive Comparison
+```bash
+# Interactive mode (prompts for fleet, slot minutes, and thread counts)
+python compare_solvers.py
+
+# Or via main CLI with arguments
+python main.py compare-solvers --fleet 50 --slot 30 --threads 1 2 4 8
+```
 *Sample Output:*
+```text
+Implementation   | Threads | Flow (Buses) |  Passengers |    Cost |  Time (ms) |  Speedup | Efficiency
+----------------------------------------------------------------------------------
+Serial (C)       |    1    |           50 |        9803 |   -9803 |      1.000 |    1.00x |     100.0%
+Parallel (OpenMP) |    1    |           50 |        9803 |   -9803 |      2.000 |    0.50x |      50.0%
+Parallel (OpenMP) |    2    |           50 |        9803 |   -9803 |    676.000 |    0.00x |       0.1%
+Parallel (OpenMP) |    4    |           50 |        9803 |   -9803 |   1383.000 |    0.00x |       0.0%
+Parallel (OpenMP) |    8    |           50 |        9803 |   -9803 |   2219.000 |    0.00x |       0.0%
+```
 ```text
 === Optimization vs Baseline Comparison (Fleet = 50) ===
 Baseline Uniform Passengers: 8630 (86.78%)

@@ -74,6 +74,12 @@ def main():
     subparsers.add_parser("benchmark", help="Run full scaling benchmarks")
     subparsers.add_parser("plot", help="Generate all analysis plots")
 
+    p_solvers = subparsers.add_parser("compare-solvers", help="Interactive or parameterized comparison of Serial vs Parallel OpenMP")
+    p_solvers.add_argument("--fleet", type=int, default=50, help="Fleet size F (default: 50)")
+    p_solvers.add_argument("--slot", type=int, default=30, help="Slot duration in minutes (default: 30)")
+    p_solvers.add_argument("--threads", type=int, nargs="+", default=None, help="List of thread counts (e.g. --threads 1 2 4 8)")
+    p_solvers.add_argument("--interactive", action="store_true", help="Prompt interactively for thread counts and parameters")
+
     args = parser.parse_args()
     if args.command == "run":
         cmd_run(args)
@@ -83,6 +89,12 @@ def main():
         run_full_benchmarks()
     elif args.command == "plot":
         generate_all_plots()
+    elif args.command == "compare-solvers":
+        from compare_solvers import interactive_cli, run_solver_comparison
+        if args.interactive or (args.threads is None and len(sys.argv) == 2):
+            interactive_cli()
+        else:
+            run_solver_comparison(fleet=args.fleet, slot_minutes=args.slot, thread_counts=args.threads)
     else:
         # Default behavior: run comparison
         args.fleet = 50
